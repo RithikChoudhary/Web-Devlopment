@@ -1,0 +1,25 @@
+p{
+    background-color: lime;
+    color: red;
+    text-align: left;
+
+}
+body{
+    background-color: black;
+    /* text-align: center; */
+}
+#heading1{
+    color: gray;
+    background-color: red;
+    text-align: center;
+}
+#heading2{
+    color: brown;
+    background-color: yellow;
+    text-align: center;
+}
+#paragraph2{
+    color: blueviolet;
+    background-color: aqua;
+    text-align: center;
+}
