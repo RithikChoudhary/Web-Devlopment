@@ -1,0 +1,13 @@
+body {
+    /* if the image is small then the image will repeat  */
+    /* if image is large then the image expand and some part may lost  */
+    background-image: url(/media/rithik/WORKING/Code/Web/Web/CSS/lizard.jpg);
+    /* by using no repeat tag the small image will not repeat  */
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat-x;
+    /* it will repeat the image in x direction via repeat-y */
+    background-position: left top;
+    /* it is use to position the image */
+    background-attachment: fixed;
+    /* it will fix the background and will not move with the text */
+}
