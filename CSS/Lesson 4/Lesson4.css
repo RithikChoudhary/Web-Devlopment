@@ -1,0 +1,17 @@
+body{
+    background-color: gray;
+}
+.p1{
+    color: red;
+    background-color: yellow;
+    text-align: center;
+}
+
+.h1{
+    color: aqua;
+    background-color: blue;
+}
+.mycolor{
+    color: darkblue;
+    background-color: sienna;
+}
