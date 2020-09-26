@@ -1,0 +1,8 @@
+div{
+    color: red;
+    background-color: lime;
+    width: 400px;
+    height: 300px;
+    /* border-radius is use to make the curve to division  */
+    border-radius: 50px;
+}
