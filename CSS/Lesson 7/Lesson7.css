@@ -10,4 +10,6 @@ body {
     /* it is use to position the image */
     background-attachment: fixed;
     /* it will fix the background and will not move with the text */
-}
+    background-color: aqua;
+    background-size: 30pc ; 
+  }
