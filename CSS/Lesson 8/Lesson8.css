@@ -1,0 +1,15 @@
+/* background-image: linear-gradient(color name with comma) */
+/* this command will show the mixed color on the screen and by writing to left or right,bottom will change it to horizontal and vertical */
+/* linearGradient show the color in linear form */
+/* by putting % percent after the color the color will occupy the distance */
+/* body {
+    background-image: repeating-linear-gradient(to right,red, green 20%,yellow 100%);
+} */
+/* to repeat the pattern write the repeating  */
+/* body{
+    background-image: repeating-radial-gradient(circle,red,green 10%,yellow 20%);
+} */
+
+body{
+    background-image: linear-gradient(-170deg,red,green,yellow);
+}
