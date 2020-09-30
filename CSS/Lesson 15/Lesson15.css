@@ -1,0 +1,21 @@
+
+h1{
+    /* shadow effect color red and text color blue  */
+    color: red;
+    /* horizontal, vertical and 3rd measure will expend the text to show blur effect  */
+    text-shadow: 2px 3px 10px blue;
+
+    
+    /* to mix the color  */
+    text-shadow: 2px 2px 5px blue,2px 2px 5px black;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    color: red;
+    /* it overlap the 2 box and show shadow effect */
+    /* and after putting 3rd px it will show blur effect  */
+    box-shadow: 2px 3px  10px blue;
+    background-color: lightblue;
+}
