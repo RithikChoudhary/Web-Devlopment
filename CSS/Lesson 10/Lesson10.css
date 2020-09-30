@@ -1,0 +1,32 @@
+/* margin is to give space between content and the window
+padding is the space between text and the button,input and all */
+
+body {
+    /* border-color: aqua; */
+    /* background-color: aqua; */
+}
+
+div {
+    width: 300px;
+    height: 200px;
+    border: 5px solid red;
+    background-color: lightblue;
+    /* to increase the space between component  */
+    /* top and bottom 50 and right and left 150 margin  */
+    /* margin: 50px 150px; */
+    /* sequence of margin top right bottom left  */
+    /* margin: 50px 50px 20px 30px; */
+    margin: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* to give text or input k bech ka space increase hota ha  */
+
+input {
+    padding: 10px;
+    border: 2px solid red;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
