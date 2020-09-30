@@ -1,0 +1,36 @@
+/* In this lesson we have used hover or mouse hover in ancher tag  */
+/* and used many diffrent property to beautify the nav bar  */
+/* a{} or a:link can write  */
+a {
+    /* to remove line from links  */
+    text-decoration: none;
+    color: red;
+    background-color: yellow;
+    /* padding: 10px; */
+}
+
+p {
+    background-color: yellow;
+    /* height: 50px; */
+    border: 2px solid red;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* a:hover{
+    color: rgb(17, 0, 255);
+    text-decoration: underline;
+    font-size: 30px;
+
+} */
+
+a:hover {
+    color: yellow;
+    background-color: red;
+}
+
+/* a:visited{
+    color: pink;
+} */
+
+/* a:active {} */
