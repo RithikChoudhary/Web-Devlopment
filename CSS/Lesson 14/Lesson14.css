@@ -1,0 +1,14 @@
+/* opacity make object transparent 
+its value lies between 0 and 1 */
+
+img{
+    opacity: 0.4;
+    width: 100px;
+    height: 100px;
+}
+img:hover{
+    height: 120px;
+    width: 120px;
+    opacity: 1;
+}
+
