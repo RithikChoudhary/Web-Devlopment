@@ -1,0 +1,29 @@
+p{
+    color: red;
+    /* to capital the text and to lower lowercase */
+    /* text-transform: uppercase; */
+    /* capitalize make first letter capital of every word  */
+    text-transform: capitalize;
+    /* paragraph property to make space between window and our text */
+    text-indent: 100px;
+
+    text-decoration: underline;
+
+
+}
+.p1{
+    color: green;
+    /* text decoration can be underline and none  */
+    text-decoration: none;
+    /* it put space between lettes  */
+    letter-spacing: 5px;
+
+    /* word spacing  */
+    word-spacing: 20px;
+
+    /* text-shadow effect make one more text and overlap it to show shadow effect  */
+    /* horizontal spcaing then vertical spacing then color  */
+    text-shadow: 3px 3px black;
+    /* direction: rtl; */
+    
+}
