@@ -1,0 +1,54 @@
+body {
+    /* background-color: lime; */
+}
+
+p.p1 {
+    border-style: solid;
+    border-width: 10px;
+    border-color: red;
+}
+
+p.p2 {
+    border-style: dotted;
+}
+
+p.p3 {
+    border-style: dashed;
+}
+
+p.p4 {
+    /* text-size-adjust: 30%; */
+    border-style: double;
+    border-width: 10px 20px 10px 25px;
+    border-color: blue red yellow lime;
+}
+
+p.p5 {
+    border-width: 10px;
+    border-style: groove;
+    border-top-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: inset;
+    border-right-style: ridge;
+}
+
+p.p6 {
+    border-style: ridge;
+    border-left: 10px solid red;
+    border-right: 10 solid blue;
+}
+
+p.p7 {
+    /* border-style: inset; */
+    border: 5px solid green;
+}
+
+p.p8 {
+    border-style: outset;
+    border-width: 10px 2px 2px 10px;
+    border-color: blue;
+}
+
+
+
+
