@@ -1,0 +1,12 @@
+body{
+
+}
+p{
+    font-family: Arial;
+    font-style: italic;
+    /* em,cm,px increase the font size  */
+    font-size: 30px;
+    font-weight: bold;
+    border: 5px;
+
+}
