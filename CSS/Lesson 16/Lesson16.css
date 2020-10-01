@@ -1,0 +1,30 @@
+.main_div{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+
+
+}
+
+.inner1{
+    width: 100%;
+    height: 20%;
+    background-color: yellow;
+}
+
+.inner2{
+    width: 100%;
+    height: 10%;
+    background-color: red;
+}
+.inner3{
+    width: 100%;
+    height: 60%;
+    background-color: green;
+}
+
+.inner4{
+    width: 100%;
+    height: 10%;
+    background-color: yellow;
+}
