@@ -1,0 +1,13 @@
+.mydiv{
+    /* it is use to divide the text into column  */
+    column-count: 3;
+    /* it is use to put the gap betwwrn 2 column  */
+    column-gap: 50px;
+    /* to put the line betwwen 2 column we use rule property  */
+    column-rule-width: 10px;
+    column-rule-style: double;
+    column-rule-color: red;
+    /* to give all command in same line  */
+    column-rule: 10px double green;
+    column-width: 200px;
+}
