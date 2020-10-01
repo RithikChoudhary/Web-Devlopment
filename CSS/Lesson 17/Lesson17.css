@@ -1,0 +1,13 @@
+/* Css counter  */
+body{
+    counter-reset: section;
+
+}
+h2::before{
+    counter-increment: section;
+    content: "section" counter(section)":";
+}
+h2::after{
+    counter-increment: section;
+    content: "section" counter(section)":";
+}
