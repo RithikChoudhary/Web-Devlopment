@@ -12,8 +12,8 @@
 // }
 
 //in guest function we defined default parameter, so if nothing pass in function calling then these will run 
-let guestUser = function(name = 'unName' , courseCount = 0){
-    return 'Hello ' + name + ' YOur Course count is ' +courseCount
+let guestUser = function (name = 'unName', courseCount = 0) {
+    return 'Hello ' + name + ' YOur Course count is ' + courseCount
 }
 
-console.log(guestUser())
+console.log(guestUser('John', 1))
