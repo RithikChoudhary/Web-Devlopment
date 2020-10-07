@@ -16,6 +16,12 @@ var sam = {
     isActive: false
 }
 
+//map convert into object and iteratable
 let users = new Map()
 
 console.log(typeof users);
+
+
+for( const value of users.values()){
+    console.log(value.name)
+}
