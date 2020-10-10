@@ -58,7 +58,7 @@ body {
 
 #container ul li {
     list-style: none;
-    border: 2px solid #b5c5dd;
+    border: 5px solid #b5c5dd;
     width: 80%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -106,11 +106,11 @@ body {
 #container .controls #input {
     width: 100%;
     background: white;
-    border: none;
+    /* border: none; */
     height: 30px;
     margin-top: 2px;
     cursor: pointer;
-    color: white;
+    /* color: white; */
 }
 
 #container .controls button:focus {
