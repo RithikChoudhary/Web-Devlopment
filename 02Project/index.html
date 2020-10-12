@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>MY first web app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="error">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PHONE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">CART</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay">
+                
+            </div>
+            <div class="mobile">
+                <img src="mobile.png" alt="">
+            </div>
+            <div id="circle">
+                <div class="feature one">
+                    <img src="camera.png" alt="">
+                    <h1>Camera</h1>
+                    <p>12MO,WIde Angle lens</p>
+
+
+                </div>
+                <div class="feature two">
+                    <img src="processor.png" alt="">
+                    <h1>processor</h1>
+                    <p>Octa core 865+</p>
+                </div>
+                <div class="feature three">
+                    <img src="display.png" alt="">
+                    <h1>display</h1>
+                    <p>6.5" Super Amoled</p>
+                </div>
+                <div class="feature four">
+                    <img src="battery.png" alt="">
+                    <h1>Battery Life</h1>
+                    <p>6000mAh last long 2 days</p>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="arrow.png" alt="" id="upbtn">
+            <h3>Featutes</h3>
+            <img src="arrow.png" alt="" id="downbtn">
+        </div>
+    </div>
+
+    <script>
+        var circle =document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn")
+        var downbtn = document.getElementById("downbtn")
+
+        var rotateValue = circle.style.transform
+        var rotateSum;
+        upbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)"
+            circle.style.transform = rotateSum
+            rotateValue = rotateSum
+        }
+        downbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)"
+            circle.style.transform = rotateSum
+            rotateValue = rotateSum
+        }
+    </script>
+
+</body>
+
+</html>
