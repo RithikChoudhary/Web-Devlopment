@@ -1,0 +1,6 @@
+ReactDOM.render('kya dikhana ha' , 'kaha dikhana ha' , 'callback function');
+jsx = javascript ext also known as jsx expression
+javascript XML
+...............................................
+|    in ReactDOM.render(yahi jsx hota ha)     |
+...............................................
