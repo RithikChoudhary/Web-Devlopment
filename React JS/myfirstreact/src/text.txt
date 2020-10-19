@@ -71,3 +71,12 @@ ReactDOM.render(
     document.getElementById('root')
 )
 --------------------------------------------------------------
+var date  = new Date().toLocaleDateString();
+var time = new Date().toLocaleTimeString();
+// var hr = x.getHours()
+// var min = x.getMinutes()
+// var sec = x.getSeconds()
+// var dat = x.getDate()
+// var mon = x.getMonth()
+// var year = x.getFullYear()
+--------------------------------------------------------------
