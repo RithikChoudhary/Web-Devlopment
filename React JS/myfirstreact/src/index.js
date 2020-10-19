@@ -9,9 +9,11 @@ const img3 = "https://picsum.photos/250/300"
 ReactDOM.render(
     <>
         <h1 contentEditable='true'>Hey im {name}</h1>
-        <img src={img1} alt="Random img"/>
-        <img src={img2} alt="Random img"/>
-        <img src={img3} alt="Random img"/>
+        <img src={img1} alt="Random img" />
+        <img src={img2} alt="Random img" />
+        <a href="#">
+            <img src={img3} alt="Random img" />
+        </a>
     </>,
     document.getElementById('root')
 )
