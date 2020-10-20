@@ -1,29 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-let curDate = new Date(2020, 10, 5, 13);
-curDate = curDate.getHours();
-let greeting = '';
-const cssStyle = {};
-
-if (curDate >= 1 && curDate < 12) {
-    greeting = 'Good Morning'
-    cssStyle.color = 'green'
-}
-else if (curDate >= 12 && curDate < 19) {
-    greeting = 'Good Afternoon'
-    cssStyle.color = "red"
-}
-else {
-    greeting = 'Good Night'
-    cssStyle.color = "blue"
-}
 ReactDOM.render(
-    <>
-        <div>
-            <h1> Hello Sir,<span style={cssStyle}> {greeting}</span></h1>
-        </div>
-    </>,
-    document.getElementById('root')
-)
+<>
+    <h1>My name is Rithik</h1>
+    <p>this is paragraph</p>
+    <ol>
+        <li>Rithik</li>
+        <li>Champ</li>
+        <li>Chim</li>
+        <li>Thanos</li>
+        <li>Burnt</li>
+    </ol>
+</>,
+document.getElementById('root'))
