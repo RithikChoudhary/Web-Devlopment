@@ -2,17 +2,27 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
-const name = 'Rithik'
-const img1 = "https://picsum.photos/210/310"
-const img2 = "https://picsum.photos/220/320"
-const img3 = "https://picsum.photos/250/300"
+let curDate = new Date(2020, 10, 5, 13);
+curDate = curDate.getHours();
+let greeting = '';
+const cssStyle = {};
+
+if (curDate >= 1 && curDate < 12) {
+    greeting = 'Good Morning'
+    cssStyle.color = 'green'
+}
+else if (curDate >= 12 && curDate < 19) {
+    greeting = 'Good Afternoon'
+    cssStyle.color = "red"
+}
+else {
+    greeting = 'Good Night'
+    cssStyle.color = "blue"
+}
 ReactDOM.render(
     <>
-        <h1 className="heading">Hey im {name}</h1>
-        <div className="img_div">
-            <img src={img1} alt="Random img" />
-            <img src={img2} alt="Random img" />
-            <img src={img3} alt="Random img" />
+        <div>
+            <h1> Hello Sir,<span style={cssStyle}> {greeting}</span></h1>
         </div>
     </>,
     document.getElementById('root')
