@@ -3,4 +3,25 @@ import ReactDOM from 'react-dom';
 import App from './App'
 import './index.css'
 
+<<<<<<< HEAD
 ReactDOM.render(<App />,document.getElementById('root'))
+=======
+ReactDOM.render(
+  <>
+    <div className='cards'>
+      <div className='card'>
+        <img src='https://wallpapercave.com/wp/wp4056410.jpg' alt='mypic' className='card_img' />
+        <div className='card_info'>
+          <span className='card_category'> A Netflix Orignal series</span>
+          <h3 className='card_title'> Dark </h3>
+          <a href='https://www.netflix.com/in/title/80990668?source=35' target='_blank'>
+            <button>Watch Now</button>
+  
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </>,
+  document.getElementById('root'))
+>>>>>>> f5e4346f58e56bc7dbdf14b381f04e2276bc6116
