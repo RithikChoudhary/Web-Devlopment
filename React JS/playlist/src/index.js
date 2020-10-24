@@ -20,6 +20,4 @@ function Card() {
     </>
   )
 }
-ReactDOM.render(<Card />
-  ,
-  document.getElementById('root'))
+ReactDOM.render(<Card />,document.getElementById('root'))
