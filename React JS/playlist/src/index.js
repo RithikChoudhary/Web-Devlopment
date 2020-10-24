@@ -11,6 +11,7 @@ ReactDOM.render(
           <h3 className='card_title'> Dark </h3>
           <a href='https://www.netflix.com/in/title/80990668?source=35' target='_blank'>
             <button>Watch Now</button>
+  
           </a>
         </div>
       </div>
