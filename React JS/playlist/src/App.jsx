@@ -24,18 +24,18 @@ import { useState } from 'react';
 
 
 const App = () => {
-    let time =new Date().toLocaleTimeString()
+    let time = new Date().toLocaleTimeString()
     const state = useState();
     const [count, setCount] = useState(time)
 
     const IncNum = () => {
-        time =new Date().toLocaleTimeString()
+        time = new Date().toLocaleTimeString()
         setCount(time);
     }
+    setInterval(IncNum, 1000)
     return (
         <>
-            <h1 className='h1'> {count} </h1>
-            <button className='b' onClick={IncNum}>Click Me</button>
+            <h1> {count} </h1>
         </>
     )
 }
