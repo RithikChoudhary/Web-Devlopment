@@ -1,22 +1,23 @@
 *{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  background-color: #d2dbdd;
-}
+  text-align: center;
+  /* background-color: lime; */
 
-.heading_style{
-  padding: 30px 0;
-  text-align: center;
-  font-family: 'Raleway', sans-serif ;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  background-color: #ffffff;
-  font-size: 1.5rem;
-  margin-bottom: 30px;
 }
-.slot_inner{
+h1{
   text-align: center;
+  /* padding: 100px; */
+  /* margin: 0px; */
+  
+  color: red;
+}
+button{
+  color: red;
+  border-radius: 10px;
+  /* background-color: black; */
+  margin: 10px;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+  /* border: 5px solid violet; */
+
 }
