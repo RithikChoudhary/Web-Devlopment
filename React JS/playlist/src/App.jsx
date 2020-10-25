@@ -24,12 +24,13 @@ import { useState } from 'react';
 
 
 const App = () => {
+    let time =new Date().toLocaleTimeString()
     const state = useState();
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(time)
 
     const IncNum = () => {
-        setCount(count + 1);
-        console.log('click')
+        time =new Date().toLocaleTimeString()
+        setCount(time);
     }
     return (
         <>
