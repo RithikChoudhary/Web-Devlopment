@@ -1,32 +1,44 @@
-import React from 'react'
-import { useState } from 'react'
+import React from 'react';
+import { useState } from 'react';
+// import SlotM from './SlotMach'
+
+
+// const App = () => {
+//     return (
+//         <>
+//             <h1 className='heading_style'>
+//                 🎰 Welcome to <span style={{ fontWeight: 'bold' }}>Slot machine game </span>🎰
+//             </h1>
+//             <div className='slotmachine'>
+//                 <SlotM x='😄' y='😄' z='😄' />
+//                 <hr/>
+//                 <SlotM x='😄' y='⛈' z='😄' />
+//                 <hr/>
+//                 <SlotM x='🔥' y='〽' z='😄' />
+//                 <hr/>
+//             </div>
+//         </>
+//     )
+// }
+
 
 
 const App = () => {
+    let time = new Date().toLocaleTimeString()
+    const state = useState();
+    const [count, setCount] = useState(time)
 
-    const purple = "#8e44ad"
-    const [bg, setbg] = useState(purple);
-    const [name,setName] = useState("click Me")
-
-    const bgChange = () => {
-        let newbg = "#34495e"
-        setbg(newbg)
-        setName("Ouch!!")
+    const IncNum = () => {
+        time = new Date().toLocaleTimeString()
+        setCount(time);
     }
-
-    const doubl = () =>{
-        setbg(purple)
-        setName("Double clicked")
-    }
-
-
+    setInterval(IncNum, 1000)
     return (
         <>
-            <div style={{ backgroundColor: bg }}>
-                <button onMouseEnter={bgChange} onMouseLeave= {doubl}>{name}</button>
-            </div>
+            <h1> {count} </h1>
         </>
     )
+
 }
 
 export default App;
