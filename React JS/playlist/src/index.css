@@ -1,24 +1,20 @@
-*{
-  text-align: center;
-  /* background-color: lime; */
-
-}
-h1{
-  text-align: center;
-  /* padding: 100px; */
-  /* margin: 0px; */
-  font-size: 100px;
-  
-  color: red;
+div{
+  width: 100%;
+  height: 100vh;
+  background: #8e44ad;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 button{
-  color: red;
-  border-radius: 10px;
-  /* background-color: black; */
-  margin: 10px;
-  padding: 15px 32px;
-  display: inline-block;
-  font-size: 16px;
-  /* border: 5px solid violet; */
-
+  font-size: 50px;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid #ecf0f1;
+  background-color: #9b59b6;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
 }

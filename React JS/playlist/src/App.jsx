@@ -1,23 +1,32 @@
-import React from 'react';
-import { useState } from 'react';
+import React from 'react'
+import { useState } from 'react'
 
 
 const App = () => {
-    let time = new Date().toLocaleTimeString()
-    const state = useState();
-    const [count, setCount] = useState(time)
 
-    const IncNum = () => {
-        time = new Date().toLocaleTimeString()
-        setCount(time);
+    const purple = "#8e44ad"
+    const [bg, setbg] = useState(purple);
+    const [name,setName] = useState("click Me")
+
+    const bgChange = () => {
+        let newbg = "#34495e"
+        setbg(newbg)
+        setName("Ouch!!")
     }
-    setInterval(IncNum, 1000)
+
+    const doubl = () =>{
+        setbg(purple)
+        setName("Double clicked")
+    }
+
+
     return (
         <>
-            <h1> {count} </h1>
+            <div style={{ backgroundColor: bg }}>
+                <button onClick={bgChange} onDoubleClick = {doubl}>{name}</button>
+            </div>
         </>
     )
-
 }
 
 export default App;
