@@ -5,7 +5,7 @@ const App = () => {
 
     const [name, setName] = useState()
     const [fullName, setFullName] = useState()
-    
+
     const inputEvent = (event) => {
         setName(event.target.value)
     }
@@ -16,12 +16,14 @@ const App = () => {
     return (
         <>
             <div>
-                <h1>Hello {fullName}</h1>
-                <input type="text" placeholder="Enter your text"
-                    onChange={inputEvent}
+                <form>
+                    <h1>Hello {fullName}</h1>
+                    <input type="text" placeholder="Enter your text"
+                        onChange={inputEvent}
 
-                />
-                <button onClick={onSubmit}>Click me</button>
+                    />
+                    <button onClick={onSubmit}>Click me</button>
+                </form>
             </div>
         </>
     )
