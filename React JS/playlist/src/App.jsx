@@ -3,26 +3,33 @@ import { useState } from 'react'
 
 const App = () => {
 
-    const [name, setName] = useState()
+    const [name, setName] = useState("")
     const [fullName, setFullName] = useState()
 
-    const inputEvent = (event) => {
-        setName(event.target.value)
-    }
-    const onSubmit = () => {
+
+    const onSubmit = (event) => {
+        event.prevent.Default();
         setFullName(name)
+    }
+    const inputEvent = (event) => {
+        console.log(event.target.value);
+        setName(event.target.value)
     }
 
     return (
         <>
             <div>
-                <form>
+                <form onSubmit={onSubmit}>
+
                     <h1>Hello {fullName}</h1>
-                    <input type="text" placeholder="Enter your text"
+                    <input
+                        type="text"
+                        placeholder="Enter your text"
                         onChange={inputEvent}
+                        value={name}
 
                     />
-                    <button onClick={onSubmit}>Click me</button>
+                    <button >Click me</button>
                 </form>
             </div>
         </>
