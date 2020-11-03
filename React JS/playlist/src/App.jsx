@@ -3,17 +3,30 @@ import { useState } from 'react'
 
 const App = () => {
 
-    const [name, setName] = useState("")
-    const [fullName, setFullName] = useState()
-
-
+    const [fullName, setFullName] = useState({fname: "",lname: ""});
     const onSubmit = (event) => {
         event.prevent.Default();
-        setFullName(name)
     }
     const inputEvent = (event) => {
-        console.log(event.target.value);
-        setName(event.target.value)
+        // console.log(event.target.value);
+        // console.log(event.target.name);
+        const {value,name} = event.target;
+
+        setFullName((preValue) => {
+            if (name === 'fname') {
+                return {
+                    fname: value,
+                    lname: preValue.lname,
+                }
+            }
+            else if (name === 'lname') {
+                return {
+                    fname: preValue.lname,
+                    lname: value,
+                }
+            }
+        })
+
     }
 
     return (
@@ -21,14 +34,23 @@ const App = () => {
             <div>
                 <form onSubmit={onSubmit}>
 
-                    <h1>Hello {fullName}</h1>
+                    <h1>Hello {fullName.fname}</h1>
                     <input
                         type="text"
                         placeholder="Enter your text"
+                        name="fName"
                         onChange={inputEvent}
-                        value={name}
-
+                        value={fullName.fname}
                     />
+                    <br />
+                    <input
+                        type="text"
+                        placeholder="Enter your text"
+                        name="lName"
+                        onChange={inputEvent}
+                        value={fullName.lname}
+                    />
+                    <br />
                     <button >Click me</button>
                 </form>
             </div>
