@@ -11,6 +11,7 @@
 
 .center_div {
   width: 25%;
+  height: 50%;
   background: #f4f4f4;
   box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
