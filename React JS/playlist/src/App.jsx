@@ -3,32 +3,20 @@ import { useState } from 'react'
 
 const App = () => {
 
-    const [fullName, setFullName] = useState({fname: "",lname: ""});
-    const onSubmit = (event) => {
-        event.prevent.Default();
-    }
+    const [fullName, setFullName] = useState({ fname: "", lname: "" });
+
+    const onSubmit = (event) => {event.preventDefault()}
+
     const inputEvent = (event) => {
-        // console.log(event.target.value);
-        // console.log(event.target.name);
-        const {value,name} = event.target;
+        const { value, name } = event.target;
 
         setFullName((preValue) => {
-            if (name === 'fname') {
-                return {
-                    fname: value,
-                    lname: preValue.lname,
-                }
-            }
-            else if (name === 'lname') {
-                return {
-                    fname: preValue.lname,
-                    lname: value,
-                }
+            return {
+                ...preValue,
+                [name]: value,
             }
         })
-
     }
-
     return (
         <>
             <div>
@@ -38,7 +26,7 @@ const App = () => {
                     <input
                         type="text"
                         placeholder="Enter your text"
-                        name="fName"
+                        name="fname"
                         onChange={inputEvent}
                         value={fullName.fname}
                     />
@@ -46,15 +34,13 @@ const App = () => {
                     <input
                         type="text"
                         placeholder="Enter your text"
-                        name="lName"
+                        name="lname"
                         onChange={inputEvent}
-                        value={fullName.lname}
-                    />
+                        value={fullName.lname} />
                     <br />
                     <button >Click me</button>
                 </form>
             </div>
-        </>
-    )
+        </>)
 }
 export default App;
